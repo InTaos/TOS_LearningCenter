@@ -1,0 +1,71 @@
+plugins {
+    id 'java'
+    id 'jvm-test-suite'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {mavenCentral()}
+
+test {
+    useJUnitPlatform{
+        ignoreFailures = true
+
+        //include('TOSLearningCenterTests/FooterTests.class')
+
+        includeTags('themeTests')
+        includeTags('localisationEyesTests')
+        //includeTags('videoTests')
+        includeTags('headerTests')
+        includeTags('featuredTests')
+        includeTags('footerTests')
+        includeTags ('treeMenuTests')
+
+       //filter{excludeTestsMatching "*.searchTest"}
+
+        systemProperties = [browser: System.getProperty('browser', 'chromeheadless')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'firefoxheadless')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'edgeheadless')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'edge')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'firefox')]
+
+
+        systemProperties(
+                [// Configuration parameters to execute top-level classes in parallel but methods in same thread
+                'junit.jupiter.execution.parallel.enabled': 'true',
+                'junit.jupiter.execution.parallel.mode.default': 'same_thread',
+                'junit.jupiter.execution.parallel.mode.classes.default': 'concurrent',
+                ]
+        )
+
+    }
+
+}
+
+        dependencies {
+
+            implementation 'junit:junit:4.13.2'
+            testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+            testImplementation 'org.testng:testng:7.1.0'
+            testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+            testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+            implementation 'org.junit.jupiter:junit-jupiter-params:5.9.0'
+            implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.5.3'
+            implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.3.0'
+            testImplementation('org.assertj:assertj-core:3.23.1')
+            implementation'org.junit.platform:junit-platform-launcher:1.9.0'
+            testImplementation group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.9.1'
+            implementation group: 'com.applitools', name: 'eyes-selenium-java3', version: '5.0.0'
+
+        }
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
