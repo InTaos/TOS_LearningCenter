@@ -12,4 +12,6 @@ All methods and page elements are found in **src/test/PageElements**.
 
 In **build.gradle** file we can perform filtering of the test by tag, and also we can switch from one browser to another by just comment or uncomment the expressions. 
 
+Each tests works with freshly instantiated browser.
+**Default browser is chrome-headless!**
 To start the tests double CTR and type **"gradle clean test"**.
