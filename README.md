@@ -13,9 +13,11 @@ In build.gradle file we can perform filtering of the test by tag, and also we ca
 
 Each of the tests works with freshly instantiated browser. Default browser is chrome-headless! To start the tests, double CTR and type "gradle clean test".
 
+
 Functionalities:
 1. Browsers: Chrome, Firefox, Edge (headless and non-headless mode)
 2. Eyes tool integration for Localization tests
+
 
 
 Tests:
