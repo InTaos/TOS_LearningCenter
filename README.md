@@ -1,7 +1,7 @@
 # TOS_LearningCenterAI
 Automation testing framework for "Thinkorswim" Web Learning Center. Tech: JAVA, SELENIUM, JUNIT5, GRADLE, APPLITOOLS EYES 
 
-All tests are found in **src/test/Tests**
+All TESTS are found in **src/test/Tests**
 
 All methods and page elements are found in **src/test/PageElements**
 
