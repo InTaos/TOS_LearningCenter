@@ -9,7 +9,7 @@ AbstractTest class contains all reusable methods and browsers needed for tests. 
 
 VideoTests class must be run in non-headless mode!
 
-In build.gradle file we can perform filtering of the test by tag, and also we can switch from one browser to another by just comment or uncomment the expressions.
+In build.gradle file you can perform filtering of the test by tag, and also you can switch from one browser to another or from one test suit to another by just comment or uncomment the expression.
 
 Default browser is Chrome-headless! 
 Each of the tests works with freshly instantiated browser! 
