@@ -15,24 +15,24 @@ test {
         //include('TOSLearningCenterTests/FooterTests.class')
 
         includeTags('themeTests')
-        includeTags('localisationEyesTests')
+        //includeTags('localisationEyesTests')
         //includeTags('videoTests')
-        includeTags('headerTests')
-        includeTags('featuredTests')
-        includeTags('footerTests')
-        includeTags ('treeMenuTests')
+        //includeTags('headerTests')
+        //includeTags('featuredTests')
+        //includeTags('footerTests')
+        //includeTags ('treeMenuTests')
 
        //filter{excludeTestsMatching "*.searchTest"}
 
-        systemProperties = [browser: System.getProperty('browser', 'chromeheadless')]
-
-        //systemProperties = [browser: System.getProperty('browser', 'firefoxheadless')]
-
-        //systemProperties = [browser: System.getProperty('browser', 'edgeheadless')]
+        //systemProperties = [browser: System.getProperty('browser', 'chrome')]
 
         //systemProperties = [browser: System.getProperty('browser', 'edge')]
 
         //systemProperties = [browser: System.getProperty('browser', 'firefox')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'firefoxheadless')]
+
+        //systemProperties = [browser: System.getProperty('browser', 'edgeheadless')]
 
 
         systemProperties(

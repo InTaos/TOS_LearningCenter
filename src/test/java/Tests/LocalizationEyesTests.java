@@ -17,7 +17,7 @@ public class LocalizationEyesTests extends AbstractTest{
 
     private WebDriver driver;
     private Eyes eyes;
-    private String apiKey = System.getenv("MY_APPLITOOLS_API_KEY");
+    private String apiKey = "iWE7x8r3eMLI109iAXOnu520kM6fPuB7HlCXkXp4YUZQM110";
     private static ClassicRunner runner;
     private Configuration testConfig;
     private HeaderPage header;
