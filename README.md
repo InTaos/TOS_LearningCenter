@@ -11,8 +11,12 @@ VideoTests class must be run in non-headless mode!
 
 In build.gradle file we can perform filtering of the test by tag, and also we can switch from one browser to another by just comment or uncomment the expressions.
 
-Each of the tests works with freshly instantiated browser. Default browser is chrome-headless! To start the tests, double CTR and type "gradle clean test".
+Default browser is Chrome-headless! 
+Each of the tests works with freshly instantiated browser! 
+Tests are executed parallelly! 
+To start the tests, double CTR and type "gradle clean test".
 
+In order to see the results of Eyes tools you must have an account in: https://applitools.com/, from where you take API KEY. You must replace the API KEY in the **LocalizationEyesTests.java** class in variable **private String apiKey = "<>"**.
 
 Functionalities:
 1. Browsers: Chrome, Firefox, Edge (headless and non-headless mode)
