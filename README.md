@@ -28,7 +28,7 @@ Tests:
 1. Video tests: full screen, full screen to normal screen, video play validation
 2. Localization tests - Eyes tool & hard-coded Chinese text
 3. Search bar tests
-4. Tree menu and Footer links network respond tests
+4. Tree menu links and Footer links network respond tests
 5. Logo to main page tests
 6. Dark & Light Themes tests
 
